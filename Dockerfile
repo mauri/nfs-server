@@ -7,5 +7,5 @@ RUN apk update \
 VOLUME /data
 EXPOSE 111/udp 2049/tcp
 ADD startup.sh /startup.sh
-CMD [ "/startup.sh" ]
+ENTRYPOINT [ "/startup.sh" ]
 	
